@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('https://i.imgur.com/nffwvN6.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
+  animation: pulse 2s infinite;
+  text-shadow: 0 0 5px #ffd900db, 0 0 10px #ff9900bd, 0 0 20px #ff9900b3;
+}
+
+h3 {
+  font-size: 2em;
+  animation: pulse 2s infinite;
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ff9900, 0 0 20px #ff9900;
+}
+
+button {
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 15px 30px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+button:hover {
+  background-color: #ffae00;
+  box-shadow: 2px 2px 20px 20px #ffffff;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+
+  .conteudo {
+    padding: 30px 10px;
+  }
+}
